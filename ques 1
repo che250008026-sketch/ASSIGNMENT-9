@@ -1,0 +1,25 @@
+#include<iostream>
+
+using namespace std;
+
+struct item{
+    int id;
+    float cost;
+};
+int main(){
+    item structures[6];
+    structures[1]={0,0.1};
+    structures[2]={1,50.0169};
+    structures[3]={2,2.2};
+    structures[4]={3,300.3};
+    
+    for(int i=1 ; i<6 ; i++){
+        if(structures[i].cost>50.00){
+            cout<<structures[i].id<<endl<<structures[i].cost<<endl;
+        }
+    }
+    
+    
+    
+    return 0;
+}

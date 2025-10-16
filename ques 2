@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+struct Color{
+    int red;
+    int green;
+    int blue;
+};
+int main(){
+    Color structure[5];
+    structure[0]={0,0,0};
+    structure[1]={0,0,1};
+    structure[2]={0,1,2};
+    structure[3]={1,2,3};
+    structure[4]={2,3,4};
+ for (int i = 0; i < 3; i++) {
+         structure[i].red = 255 - structure[i].red;
+         structure[i].green = 255 - structure[i].green;
+         structure[i].blue = 255 - structure[i].blue;
+    }
+    for(int i=0; i<5;i++){
+        cout<< "red: "<<structure[i].red<<" "<< "green: "<<structure[i].green<<" "<<"blue: "<<structure[i].blue<<endl;
+       
+    }
+    return 0;
+}
